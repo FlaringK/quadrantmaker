@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadrant Maker</title>
+
+  <meta property="og:title" content="GifStuck" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://flaringk.github.io/quadrantmaker" />
+  <meta property="og:image" content="https://pipe.miroware.io/5f586dbe02740c4a7fb69f99/Ididart/Icon.png" />
+  <meta property="og:description" content="Generate Gifs from HouseTrapped" />
+  <meta name="theme-color" content="#cccccc">
+
+  <link rel="stylesheet" href="./quadrants.css">
+</head>
+<body>
+
+  <div id="main">
+    
+    <div id="text">
+      <h1>Quadrant Maker!!!!!</h1>
+
+      <div id="subtitle">by <a target="_blank" href="https://flaringk.github.io/projects">FlaringK</a></div>
+
+      <p>Welcome to Quadrant Maker! A Gif generator for all your shipping needs. Simply choose a gif, upload your characters, and generate your quadrant!</p>
+
+      <div>
+        <label for="gifSelect">Choose a quadrant:</label>
+
+        <select name="gifSelect" id="gifSelect">
+          <optgroup label="Stable Quadrants">
+            <option value="heart">Matesprite (Hearts)</option>
+            <option value="spade">Kismesis (Spades)</option>
+            <option value="pale" selected>Moirallegience (Diamonds)</option>
+            <option value="club">Auspisticism (Clubs)</option>
+          </optgroup>
+          
+          <optgroup label="Duo Quadrant Vacilations">
+            <option value="heartspade">Red / Black (Hearts / Spades)</option>
+            <option value="heartpale">Red / Pale (Hearts / Diamonds)</option>
+            <option value="spadeclub">Black / Ash (Spades / Clubs)</option>
+          </optgroup>
+          
+          <optgroup label="Trio Quadrant Vacilations">
+            <option value="heartpalespade">Red / Pale / Black</option>
+            <option value="heartspadeclub">Red / Black / Ash</option>
+          </optgroup>
+          
+          <optgroup label="Quad Quadrant Vacilations">
+            <option value="heart2ash">Red / Pale / Black / Ash</option>
+            <option value="loop">All Quadrants in order</option>
+          </optgroup>
+        </select> 
+      </div>
+
+      <br>
+
+      <div>
+        <label for="input1">Character 1:</label> 
+        <input class="fileUpload" type="file" id="input1" name="input1" accept="image/png, image/jpeg" />
+      </div>
+      <div>
+        <label for="input2">Character 2:</label> 
+        <input class="fileUpload" type="file" id="input2" name="input2" accept="image/png, image/jpeg" />
+      </div>
+      <div>
+        <label for="input3">Character 3:</label> 
+        <input class="fileUpload" type="file" id="input3" name="input3" accept="image/png, image/jpeg" />
+      </div>
+
+      <br>
+      
+      <div>
+        <button onclick="createGif()">Create Gif!</button>
+      </div>
+      
+    </div>
+
+    <img id="finalOutput" src="./assets/example.gif">
+
+  </div>
+
+  <div style="display: none;">
+    <canvas width="650" height="450" id="canvasGenerator"></canvas>
+
+    <img src="./assets/Karkat_Stand.png" id="charImg1">
+    <img src="./assets/Terezi_Stand.png" id="charImg2">
+    <img src="./assets/Terezi_Stand.png" id="charImg3">
+
+    <img src="./assets/pale1.png" id="pale1">
+    <img src="./assets/pale2.png" id="pale2">
+    <img src="./assets/spade1.png" id="spade1">
+    <img src="./assets/spade2.png" id="spade2">
+
+    <img id="background">
+
+  </div>
+
+  <script src="./gifjs/gif.js-master/dist/gif.js"></script>
+  <script src="./quadrants.js"></script>
+
+</body>
+</html>
