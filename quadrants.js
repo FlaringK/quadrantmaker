@@ -132,6 +132,20 @@ const animationData = {
     "palebreak1", "palebreak2",
     "heartbreak2", "heartbreak1",
   ],
+  spadepale: [
+    "spade1", "spade2",
+    "spade1", "spade2",
+    "spade1", "spade2",
+    "spade1", "spade2",
+    "spadebreak1", "spadebreak2",
+    "palebreak2", "palebreak1",
+    "pale1", "pale2",
+    "pale1", "pale2",
+    "pale1", "pale2",
+    "pale1", "pale2",
+    "palebreak1", "palebreak2",
+    "spadebreak2", "spadebreak1",
+  ],
 
   heartpalespade: [
     "heart1", "heart2",
