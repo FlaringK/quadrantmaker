@@ -185,6 +185,27 @@ const animationData = {
     "spadebreak2", "spadebreak1",
     "spadebreak1", "spadebreak2",
     "heartbreak2", "heartbreak1",
+  ],  
+  
+  palespadeclub: [
+    "pale1", "pale2",
+    "pale1", "pale2",
+    "pale1", "pale2",
+    "pale1", "pale2",
+    "palebreak1", "palebreak2",
+    "clubbreak2", "clubbreak1",
+    "club1", "club2",
+    "clubbreak1", "clubbreak2",
+    "spadebreak2", "spadebreak1",
+    "spade1", "spade2",
+    "spade1", "spade2",
+    "spade1", "spade2",
+    "spade1", "spade2",
+    "spadebreak1", "spadebreak2",
+    "clubbreak2", "clubbreak1",
+    "club1", "club2",
+    "clubbreak1", "clubbreak2",
+    "palebreak2", "palebreak1",
   ],
 
   heart2ash: [
